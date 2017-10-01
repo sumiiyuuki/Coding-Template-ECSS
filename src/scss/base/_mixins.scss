@@ -1,0 +1,8 @@
+
+//--- > Media Query 初期値:sp
+
+@mixin mq($breakpoint: sp) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}

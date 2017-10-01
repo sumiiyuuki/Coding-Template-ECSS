@@ -1,0 +1,48 @@
+// namespace .st
+
+// -- > .st-Header
+
+.st-Header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: 15px 30px;
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	a {
+		color: $ecssColor;
+	}
+
+	@include mq() {
+		display: block;
+	}
+}
+
+.st-Header_Nav {
+	ul {
+		display: flex;
+		align-items: center;
+	}
+
+	li {
+		margin-left: 20px;
+		font-weight: bold;
+		
+		a {
+			transition: $baseTransition;
+
+			&:hover {
+				color: lighten($ecssColor, 10%);
+			}
+		}
+	}
+
+	@include mq() {
+		ul {
+			display: none;
+		}
+	}
+}

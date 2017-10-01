@@ -1,0 +1,76 @@
+<!-- ベース -->
+{% extends '_base/_index.html' %}
+
+<!-- メタ -->
+{% block meta %}
+  {% set metas = {
+    description: 'ECSSをルールとしたコーディングテンプレートです。',
+    keywords: ' ECSS,Gulp'
+  } %}
+{% endblock %}
+
+<!-- タイトル -->
+{% block title %}トップ{% endblock %}
+
+<!-- コンテンツ -->
+{% block content %}
+<main role="main">
+	<section class="tp-Kv">
+		<h1>ECSS CODING TEMPLATE Ver.1</h1>
+		<p>ECSSをルールとしたコーディングテンプレート</p>
+	</section>
+	<!-- / .tp-Kv -->
+
+	<section id="about" class="tp-Sec">
+		<div class="tp-Sec_Inner">
+			<h2 class="tp-Sec_Ttl">ECSSの特徴</h2>
+			<p class="tp-Sec_Lead">
+				<strong>ECSS(Enduring CSS)</strong>は基本的に、スタイルの記述を重複して書くことを認めている。<br>
+				一つのコードを共有して持っておくと、多少のスタイル変更で他の箇所で影響が出る可能性があり、メンテナンスが困難になる。
+			</p>
+			<p class="tp-Sec_Lead">
+				<strong>「軽量化」</strong>のため複雑な構造を作ってしまうより、<strong>「分ける」</strong>ことでメンテナンス性を高めることが、ECSSの特徴。
+			</p>
+		</div>
+	</section>
+	<!-- / .tp-Sec -->
+
+	<section class="tp-Sec">
+		<div class="tp-Sec_Inner">
+			<h2 class="tp-Sec_Ttl">TIPS</h2>
+			<div class="tips-List">
+				<article class="tips-List_Item">
+					<a href="/tips/detail_1.html">
+						<div class="tips-List_Thumnb"><img src="https://placehold.jp/300x200.png" alt="サムネイル"></div>
+						<div class="tips-List_Content">
+							<h3 class="tips-List_Ttl">タイトル</h3>
+							<p>テキストが入ります。</p>
+						</div>
+					</a>
+				</article>
+				<article class="tips-List_Item">
+					<a href="/tips/detail_1.html">
+						<div class="tips-List_Thumnb"><img src="https://placehold.jp/300x200.png" alt="サムネイル"></div>
+						<div class="tips-List_Content">
+							<h3 class="tips-List_Ttl">タイトル</h3>
+							<p>テキストが入ります。</p>
+						</div>
+					</a>
+				</article>
+				<article class="tips-List_Item">
+					<a href="/tips/detail_1.html">
+						<div class="tips-List_Thumnb"><img src="https://placehold.jp/300x200.png" alt="サムネイル"></div>
+						<div class="tips-List_Content">
+							<h3 class="tips-List_Ttl">タイトル</h3>
+							<p>テキストが入ります。</p>
+						</div>
+					</a>
+				</article>
+			</div>
+			<div class="tp-Sec_Btn sw-Btn_Fill"><a href="/about">Read More</a></div>
+		</div>
+	</section>
+	<!-- / .tp-Sec -->
+</main>
+<!-- / main -->
+{% endblock %}

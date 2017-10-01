@@ -1,0 +1,8 @@
+$contentWidth: 980px;
+
+$colWidth: 300px;
+
+$breakpoints: (
+  'sp': 'screen and (max-width: 768px)',
+  'pc': 'screen and (min-width: $contentWidth)',
+) !default;

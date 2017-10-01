@@ -1,0 +1,23 @@
+// namespace .sw
+
+// -- > .sw-Btn
+
+.sw-Btn_Fill {
+	text-align: center;
+
+	a {
+		display: inline-block;
+		width: $colWidth;
+		padding: 10px 0;
+		color: $white;
+		background: $ecssColor;
+		border: 2px solid $ecssColor;
+		font-weight: bold;
+		transition: $baseTransition;
+
+		&:hover {
+			color: $ecssColor;
+			background: $white;
+		}
+	}
+}

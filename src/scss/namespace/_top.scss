@@ -1,0 +1,53 @@
+// namespace .tp
+
+// -- > .tp-Kv
+
+.tp-Kv {
+	padding: 200px;
+	color: $white;
+	background: #ccc url(../images/tp-kv.jpg) no-repeat center center;
+	background-size: cover;
+	text-align: center;
+
+	@include mq() {
+		padding: 100px;
+		text-align: left;
+	}
+}
+
+// -- > .tp-Sec
+
+.tp-Sec {
+	padding: 60px 0;
+	&:nth-child(odd) {
+		background: #eee;
+	}
+}
+
+.tp-Sec_Inner {
+	width: $contentWidth;
+	margin: auto;
+
+	@include mq() {
+		width: 90%;
+	}
+}
+
+.tp-Sec_Ttl {
+	margin-bottom: 30px;
+	color: $ecssColor;
+	font-size: 30px;
+	text-align: center;
+}
+
+.tp-Sec_Lead {
+	text-align: center;
+	strong {
+		color: $ecssColor;
+	}
+}
+
+.tp-Sec_Btn {
+	margin-top: 60px;
+}
+

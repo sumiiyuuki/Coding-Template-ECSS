@@ -1,0 +1,32 @@
+// namespace .tips
+
+// -- > .tips-List
+
+.tips-List {
+	display: flex;
+	justify-content: space-between;
+	
+	@include mq() {
+		display: block;
+	}
+}
+
+.tips-List_Item {
+	width: $colWidth;
+
+	p {
+		font-size: 14px;
+	}
+
+	a {
+		transition: $baseTransition;
+		&:hover {
+			color: $ecssColor;
+		}
+	}
+}
+
+.tips-List_Ttl {
+	padding: 10px 0;
+	font-size: 16px;
+}
